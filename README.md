@@ -18,4 +18,6 @@ The dataset for this program consists of two columns and 15 rows. Each element w
 
 This class is used to partition the given dataset. Based on a column number and a column value, a question containing a condition is generated. For example, a question asked can be 'shape == 'Circle'?', or 'colour == 'Blue'?'.
 
+**Gini Impurity, Gini Formula**
 
+These two functions are used to calculate the Gini Impurity. This measurment is the probability of classifying a random data point in the data set incorrectly. The data point is randomly classified based on the distribution class labels in the dataset (in *DecisionTree.py*, these labels are defined in ```header```)
