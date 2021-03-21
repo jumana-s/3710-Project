@@ -15,6 +15,7 @@ header = ["colour", "shape"]
 The dataset for this program consists of two columns and 15 rows. Each element within the dataset consists of a colour and a shape. The data points alternate between Red, Blue, and Green Circles and Squares.
 
 **Class Question**
+
 This class is used to partition the given dataset. Based on a column number and a column value, a question containing a condition is generated. For example, a question asked can be 'shape == 'Circle'?', or 'colour == 'Blue'?'.
 
 
