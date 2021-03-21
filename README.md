@@ -6,3 +6,9 @@ A Classification and Regression Tree, or a CART, is a type of Decision Tree algo
 The CART algorithm will be used to calculate the probability our classification may be incorrect. As shown in DecisionTree.py, the algorithm asks questions relevant to the dataset in order to calculate the possibility of incorrect classification (i.e. colour == ‘Red’?, shape == ‘Circle’?). As a symptom checker, each time a symptom is selected by a user, the algorithm will narrow down which diseases associated with the symptoms may be the correct diagnoses. As more symptoms are inputted, the gini impurity will become smaller each time. Once the user has finished inputting symptoms, there will be two lists containing possible diseases as well as improbable diseases. The improbable diseases will be discarded, and the possible diseases will be sifted through using the Bayesian algorithm in order to correctly predict a diagnosis. 
 
 ## Code Break Down
+**Data Set**
+
+```
+trainingData = [['Red', 'Square'], ['Blue', 'Square'], ['Green', 'Circle'], ...]
+header = ["colour", "shape"]
+```
