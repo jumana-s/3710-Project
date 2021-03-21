@@ -24,3 +24,10 @@ These two functions are used to calculate the Gini Impurity. This measurment is 
 '''def giniFormula''' calls '''def giniImpurity''' to calculate the Gini Impurity, then the following formula is calculated:
 
 ![Gini Formula](CodeCogsEqn.png)
+
+**Best Split**
+
+This recursive function generates the best information gain from the calculated Gini Formula, as well as the next best question to ask. It determines which rows contain information that satisfy and do not satisfy the question asked. The satisfactory and non-satisfactory rows are saved in their corresponding lists. Next, the two lists, as well as the calculated Gini Impurity are sent to the '''giniFormula''' function to recalculate. 
+
+
+
