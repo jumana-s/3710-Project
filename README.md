@@ -12,3 +12,5 @@ The CART algorithm will be used to calculate the probability our classification 
 trainingData = [['Red', 'Square'], ['Blue', 'Square'], ['Green', 'Circle'], ...]
 header = ["colour", "shape"]
 ```
+The dataset for this program consists of two columns and 15 rows. Each element within the dataset consists of a colour and a shape. The data points alternate between Red, Blue, and Green Circles and Squares.
+
