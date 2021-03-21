@@ -20,4 +20,6 @@ This class is used to partition the given dataset. Based on a column number and 
 
 **Gini Impurity, Gini Formula**
 
-These two functions are used to calculate the Gini Impurity. This measurment is the probability of classifying a random data point in the data set incorrectly. The data point is randomly classified based on the distribution class labels in the dataset (in *DecisionTree.py*, these labels are defined in ```header```)
+These two functions are used to calculate the Gini Impurity. This measurment is the probability of classifying a random data point in the data set incorrectly. The data point is randomly classified based on the distribution class labels in the dataset (in *DecisionTree.py*, these labels are defined in ```header = ["colour", "shape"]```). 
+
+![equation] x = x**2
