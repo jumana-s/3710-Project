@@ -196,7 +196,7 @@ print("\nCHECK IF SOMETHING IS NUMERIC (in this case, 'Red'):")
 print("------------------------------------------------")
 print(isNumeric("Red"))
 
-q = Question(1, "Square")
+q = Question(0, "Red")
 example = trainingData[0]
 
 print("\nPRINT CURRENT QUESTION BEING ASKED:")
