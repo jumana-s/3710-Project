@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    <title>Disease Symptom Checker</title>
+    <h1 class="display-4 text-center">Symptom Checker</h1>
+
+    <div class="text-center">
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">cough</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">fever</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">shortness of breath</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">pain chest</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">diarrhea</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">vomiting</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">unresponsiveness</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">asthenia</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">dyspnea</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">pain abdominal</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">vertigo</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">apyrexial</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">sweat</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">nausea</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">dizziness</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">fall</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">syncope</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">palpitation</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">angina pectoris</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">hypokinesia</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">pressure chest</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">chest discomfort</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">orthopnea</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">chest tightness</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">jugular venous distention</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">rale</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">wheezing</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">pleuritic pain</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">distress respiratory</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">speech slurred</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">hypercapnia</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">sleeplessness</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">swelling</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">atypia</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">hypotension</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">pain</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">stool color yellow</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">systolic murmur</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">frail</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">hypoproteinemia</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">fatigue</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">haemorrhage</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">facial paresis</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">ambidexterity</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">numbness</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">splenomegaly</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">clonus</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">egophony</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">st segment elevation</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">arthralgia</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">muscle twitch</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">paralyse</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">low back pain</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">charleyhorse</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">paraparesis</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">gravida 0</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">mass in breast</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">tumor cell invasion</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">metastatic lesion</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">rhonchus</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">lung nodule</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">bleeding of vagina</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">hyperkalemia</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">bradycardia</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">cicatrisation</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">mediastinal shift</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">impaired cognition</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">snuffle</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">chill</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">headache</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">guaiac positive</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">decereased body weight</button>
+        <button type="button" onclick="addToList(this.innerHTML)" class="btn btn-info btn-lg mr-2 mt-2">sore to touch</button>
+    </div>
+
+    <br>
+    <textarea rows="5" class="form-control" type="text" id="disease-display" placeholder="" mt-2 readonly></textarea>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-lg btn-warning mt-4">Submit</button>
+    </div>
+
+    <p id="results"></p>
+
+    <script>
+        function addToList(name) {
+            document.getElementById("disease-display").placeholder += (name + " ,");
+        }
+    </script>
+
+</body>
+</html>
