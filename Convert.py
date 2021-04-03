@@ -10,7 +10,7 @@ def to_valid_list(user_sym_list):
     if type(user_sym_list) != list:
         user_sym_list = to_list(user_sym_list)
     valid_list = []
-    for i in range (0, total_sym-1):
+    for i in range (0, total_sym):
         if columns[i] in user_sym_list:
             valid_list.append(1)
         else:
