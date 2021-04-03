@@ -83,17 +83,55 @@
     </div>
 
     <br>
-    <textarea rows="5" class="form-control" type="text" id="disease-display" placeholder="" mt-2 readonly></textarea>
-
-    <div class="text-center">
-        <button type="button" class="btn btn-lg btn-warning mt-4">Submit</button>
-    </div>
+    <form method="POST">
+        <textarea rows="5" class="form-control" name="symptoms" type="text" id="disease-display" placeholder=""  readonly></textarea>
+        <div class="d-flex justify-content-center mt-4">    
+            <select class="form-select w-25" name="decision">
+                <option value="All diseases" selected>Check against</option>
+                <option value="All diseases">All diseases</option>
+                <option value="hypertensive disease">hypertensive disease</option>
+                <option value="coronary heart disease">coronary heart disease</option>
+                <option value="failure heart congestive">failure heart congestive</option>
+                <option value="asthma">asthma</option>
+                <option value="chronic obstructive airway disease">chronic obstructive airway disease</option>
+                <option value="arthritis">arthritis</option>
+                <option value="pancreatitis">pancreatitis</option>
+                <option value="decubitus ulcer">decubitus ulcer</option>
+                <option value="pancytopenia">pancytopenia</option>
+                <option value="migraine disorders">migraine disorders</option>
+                <option value="aphasia">aphasia</option>
+                <option value="melanoma">melanoma</option>
+                <option value="neoplasm metastasis">neoplasm metastasis</option>
+                <option value="kidney disease">kidney disease</option>
+                <option value="tricuspid valve insufficiency">tricuspid valve insufficiency</option>
+                <option value="sickle cell anemia">sickle cell anemia</option>
+                <option value="gastritis">gastritis</option>
+                <option value="pneumonia">pneumonia</option>
+                <option value="myocardial infarction">myocardial infarction</option>
+                <option value="hypercholesterolemia">hypercholesterolemia</option>
+                <option value="anemia">anemia</option>
+                <option value="dementia">dementia</option>
+                <option value="insufficiency renal">insufficiency renal</option>
+                <option value="hypothyroidism">hypothyroidism</option>
+                <option value="exanthema">exanthema</option>
+            </select>     
+        </div>            
+        <div class="text-center">
+            <input type="submit" name="submit_button" value="naive" class="btn btn-lg btn-warning mt-3 mr-3">
+            <input type="submit" name="submit_button" value="decision" class="btn btn-lg btn-warning mt-3">
+        </div>
+    </form>
 
     <p id="results"></p>
 
     <script>
         function addToList(name) {
-            document.getElementById("disease-display").placeholder += (name + ", ");
+            if(document.getElementById("disease-display").value.length === 0){
+                document.getElementById("disease-display").value += name;
+            }
+            else{
+                document.getElementById("disease-display").value += (", " + name);
+            }
         }
     </script>
 
