@@ -3,10 +3,6 @@ import csv
 
 inputSymptoms = ["cough", "fever"]
 
-with open('disease.csv', newline='') as f: # read data in trainingData.csv
-    reader = csv.reader(f) # define reader
-    trainingData = list(reader) # set trainingData list to everything read by reader
-
 header = [  "cough","fever","shortness of breath","pain chest","diarrhea","vomiting",
             "unresponsiveness","asthenia","dyspnea","pain abdominal","vertigo",
             "apyrexial","sweat","nausea","dizziness","fall","syncope","palpitation",
@@ -315,7 +311,12 @@ STARTING METHOD
 ---------------------------------------------------------------------------------------------
 """
 
-def BeginDecisionTree(inputSymptoms, trainingData):
+def BeginDecisionTree(inputSymptoms):
+    
+    with open('disease.csv', newline='') as f: # read data in trainingData.csv
+        reader = csv.reader(f) # define reader
+        trainingData = list(reader) # set trainingData list to everything read by reader
+        
     output = ""
     for x in inputSymptoms:
         print(x)
@@ -829,5 +830,5 @@ def BeginDecisionTree(inputSymptoms, trainingData):
     
     return "FINAL LIST OF DISEASES: " + output
 
-print(BeginDecisionTree(inputSymptoms, trainingData))
+print(BeginDecisionTree(inputSymptoms))
 
