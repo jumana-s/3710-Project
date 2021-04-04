@@ -32,7 +32,7 @@ spotipy==2.16.1
 threadpoolctl==2.1.0
 tqdm==4.56.0
 typing-extensions==3.7.4.3
-urllib3==1.26.2
+urllib3==1.26.4
 virtualenv==20.4.3
 Werkzeug==1.0.1
 ytmusicapi==0.13.1
