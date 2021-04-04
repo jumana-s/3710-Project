@@ -89,7 +89,7 @@ def classCounts(rows):
     disease = ""
     counts = {}                     # a dictionary of a label is set to count
     for row in rows:                # for each row in the dataset:
-        disease = disease + "   " + row[-1]
+        disease = disease + ", " + row[-1]
     return str(disease)
 
 """ 
