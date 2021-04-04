@@ -3,23 +3,6 @@ import csv
 
 inputSymptoms = ["cough", "fever"]
 
-header = [  "cough","fever","shortness of breath","pain chest","diarrhea","vomiting",
-            "unresponsiveness","asthenia","dyspnea","pain abdominal","vertigo",
-            "apyrexial","sweat","nausea","dizziness","fall","syncope","palpitation",
-            "angina pectoris","hypokinesia","pressure chest","dyspnea on exertion",
-            "orthopnea","chest tightness","jugular venous distention","rale,wheezing",
-            "pleuritic pain","distress respiratory","sputum purulent","hypoxemia",
-            "hypercapnia","sleeplessness","swelling","atypia","distended abdomen",
-            "pain","stool color yellow","systolic murmur","frail","hypoproteinemia",
-            "fatigue","haemorrhage","colic abdominal","ambidexterity","numbness",
-            "splenomegaly","clonus","egophony","facial paresis","aphagia",
-            "muscle twitch","paralyse","low back pain","charleyhorse","paraparesis",
-            "gravida 0","mass in breast","tumor cell invasion","metastatic lesion",
-            "pain neck","lung nodule","bleeding of vagina","hyperkalemia","bradycardia",
-            "cicatrisation","mediastinal shift","impaired cognition","snuffle",
-            "hepatosplenomegaly","headache","guaiac positive","decereased body weight",
-            "sore to touch"] # define columns in dataset
-
 cough = "0"
 fever = "0"
 shortness_of_breath = "0"
@@ -276,15 +259,6 @@ class Question: # used to partition a dataset, will record the column number (ie
     def match(self, example):
         currentValue = example[self.column]     # set the current value, depending on which column is currently being focused on
         return currentValue == self.value   # check for equivalence
-    
-    """ 
-    ---------------------------------------------------------------------------------------------
-    HELPER METHOD TO PRINT THE CURRENT QUESTION TO THE USER
-    ---------------------------------------------------------------------------------------------
-    """
-    def __repr__(self): # helper method to print current question to the user
-        condition = "==" # condition to be printed to the user
-        return "%s %s %s?" % (header[self.column], condition, str(self.value)) # print the current question to the user
 
 """ 
 ---------------------------------------------------------------------------------------------
@@ -312,11 +286,11 @@ STARTING METHOD
 """
 
 def BeginDecisionTree(inputSymptoms):
-    
+
     with open('disease.csv', newline='') as f: # read data in trainingData.csv
         reader = csv.reader(f) # define reader
         trainingData = list(reader) # set trainingData list to everything read by reader
-        
+
     output = ""
     for x in inputSymptoms:
         print(x)
