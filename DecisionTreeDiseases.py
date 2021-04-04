@@ -77,152 +77,7 @@ guaiac_positive = "0"
 decreased_body_weight = "0"
 sore_to_touch = "0"
 
-if "cough" in inputSymptoms :
-    cough = "1"
-if "fever" in inputSymptoms :
-    fever = "1"
-if "shortness of breath" in inputSymptoms :
-    shortness_of_breath = "1"
-if "pain chest" in inputSymptoms:
-    pain_chest = "1"
-if "diarrhea" in inputSymptoms:
-    diarrhea = "1"
-if "vomiting" in inputSymptoms:
-    vomiting = "1"
-if "unresponsiveness" in inputSymptoms:
-    unresponsiveness = "1"
-if "asthenia" in inputSymptoms:
-    asthenia = "1"
-if "dyspnea" in inputSymptoms:
-    dyspnea = "1"
-if "pain abdominal" in inputSymptoms:
-    pain_abdominal = "1"
-if "vertigo" in inputSymptoms:
-    vertigo = "1"
-if "apyrexial" in inputSymptoms:
-    apyrexial = "1"
-if "sweat" in inputSymptoms:
-    sweat = "1"
-if "nausea" in inputSymptoms:
-    nausea = "1"
-if "dizziness" in inputSymptoms:
-    dizziness = "1"
-if "fall" in inputSymptoms:
-    fall = "1"
-if "syncope" in inputSymptoms:
-    syncope = "1"
-if "palpitation" in inputSymptoms:
-    palpitation = "1"
-if "angina pectoris" in inputSymptoms:
-    angina_pectoris = "1"
-if "hypokinesia" in inputSymptoms:
-    hypokinesia = "1"
-if "pressure chest" in inputSymptoms:
-    pressure_chest = "1"
-if "chest discomfort" in inputSymptoms:
-    chest_discomfort  = "1"
-if "orthopnea" in inputSymptoms:
-    orthopnea = "1"
-if "chest tightness" in inputSymptoms:
-    chest_tightness = "1"
-if "jugular venous distention" in inputSymptoms:
-    jugular_venous_distention = "1"
-if "rale" in inputSymptoms:
-    rale = "1"
-if "wheezing" in inputSymptoms:
-    wheezing = "1"
-if "pleuritic pain" in inputSymptoms:
-    pleuritic_pain = "1"
-if "distress respiratory" in inputSymptoms:
-    distress_respiratory = "1"
-if "speech slurred" in inputSymptoms:
-    speech_slurred = "1"
-if "hypercapnia" in inputSymptoms:
-    hypercapnia = "1"
-if "sleeplessness" in inputSymptoms:
-    sleeplessness = "1"
-if "swelling" in inputSymptoms:
-    swelling = "1"
-if "atypia" in inputSymptoms:
-    atypia = "1"
-if "hypotension" in inputSymptoms:
-    hypotension = "1"
-if "pain" in inputSymptoms:
-    pain = "1"
-if "stool color yellow" in inputSymptoms:
-    stool_color_yellow = "1"
-if "systolic murmur" in inputSymptoms:
-    systolic_murmur = "1"
-if "frail" in inputSymptoms:
-    frail = "1"
-if "hypoproteinemia" in inputSymptoms:
-    hypoproteinemia = "1"
-if "fatigue" in inputSymptoms:
-    fatigue = "1"
-if "haemorrhage" in inputSymptoms:
-    haemorrhage = "1"
-if "facial paresis" in inputSymptoms:
-    facial_paresis = "1"
-if "ambidexterity" in inputSymptoms:
-    ambidexterity = "1"
-if "numbness" in inputSymptoms:
-    numbness = "1"
-if "splenomegaly" in inputSymptoms:
-    splenomegaly = "1"
-if "clonus" in inputSymptoms:
-    clonus = "1"
-if "egophony" in inputSymptoms:
-    egophony = "1"
-if "st segment elevation" in inputSymptoms:
-    st_segment_elevation = "1"
-if "arthralgia" in inputSymptoms:
-    arthralgia = "1"
-if "muscle twitch" in inputSymptoms:
-    muscle_twitch = "1"
-if "paralyse" in inputSymptoms:
-    paralyse = "1"
-if "low back pain" in inputSymptoms:
-    low_back_pain = "1"
-if "charleyhorse" in inputSymptoms:
-    charleyhorse = "1"
-if "paraparesis" in inputSymptoms:
-    paraparesis = "1"
-if "gravida 0" in inputSymptoms:
-    gravida_0 = "1"
-if "mass in breast" in inputSymptoms:
-    mass_in_breast = "1"
-if "tumor cell invasion" in inputSymptoms:
-    tumor_cell_invasion = "1"
-if "metastatic lesion" in inputSymptoms:
-    metastatic_lesion = "1"
-if "rhonchus" in inputSymptoms:
-    rhonchus = "1"
-if "lung nodule" in inputSymptoms:
-    lung_nodule = "1"
-if "bleeding of vagina" in inputSymptoms:
-    bleeding_of_vagina = "1"
-if "hyperkalemia" in inputSymptoms:
-    hyperkalemia = "1"
-if "bradycardia" in inputSymptoms:
-    bradycardia = "1"
-if "cicatrisation" in inputSymptoms:
-    cicatrisation = "1"
-if "mediastinal shift" in inputSymptoms:
-    mediastinal_shift = "1"
-if "impaired cognition" in inputSymptoms:
-    impaired_cognition = "1"
-if "snuffle" in inputSymptoms:
-    snuffle = "1"
-if "chill" in inputSymptoms:
-    chill = "1"
-if "headache" in inputSymptoms:
-    headache = "1"
-if "guaiac positive" in inputSymptoms:
-    guaiac_positive = "1"
-if "decreased body weight" in inputSymptoms:
-    decreased_body_weight = "1"
-if "sore to touch" in inputSymptoms:
-    sore_to_touch = "1"
+
 
 
 """ 
@@ -291,9 +146,155 @@ def BeginDecisionTree(inputSymptoms):
         reader = csv.reader(f) # define reader
         trainingData = list(reader) # set trainingData list to everything read by reader
 
+    if "cough" in inputSymptoms :
+        cough = "1"
+    if "fever" in inputSymptoms :
+        fever = "1"
+    if "shortness of breath" in inputSymptoms :
+        shortness_of_breath = "1"
+    if "pain chest" in inputSymptoms:
+        pain_chest = "1"
+    if "diarrhea" in inputSymptoms:
+        diarrhea = "1"
+    if "vomiting" in inputSymptoms:
+        vomiting = "1"
+    if "unresponsiveness" in inputSymptoms:
+        unresponsiveness = "1"
+    if "asthenia" in inputSymptoms:
+        asthenia = "1"
+    if "dyspnea" in inputSymptoms:
+        dyspnea = "1"
+    if "pain abdominal" in inputSymptoms:
+        pain_abdominal = "1"
+    if "vertigo" in inputSymptoms:
+        vertigo = "1"
+    if "apyrexial" in inputSymptoms:
+        apyrexial = "1"
+    if "sweat" in inputSymptoms:
+        sweat = "1"
+    if "nausea" in inputSymptoms:
+        nausea = "1"
+    if "dizziness" in inputSymptoms:
+        dizziness = "1"
+    if "fall" in inputSymptoms:
+        fall = "1"
+    if "syncope" in inputSymptoms:
+        syncope = "1"
+    if "palpitation" in inputSymptoms:
+        palpitation = "1"
+    if "angina pectoris" in inputSymptoms:
+        angina_pectoris = "1"
+    if "hypokinesia" in inputSymptoms:
+        hypokinesia = "1"
+    if "pressure chest" in inputSymptoms:
+        pressure_chest = "1"
+    if "chest discomfort" in inputSymptoms:
+        chest_discomfort  = "1"
+    if "orthopnea" in inputSymptoms:
+        orthopnea = "1"
+    if "chest tightness" in inputSymptoms:
+        chest_tightness = "1"
+    if "jugular venous distention" in inputSymptoms:
+        jugular_venous_distention = "1"
+    if "rale" in inputSymptoms:
+        rale = "1"
+    if "wheezing" in inputSymptoms:
+        wheezing = "1"
+    if "pleuritic pain" in inputSymptoms:
+        pleuritic_pain = "1"
+    if "distress respiratory" in inputSymptoms:
+        distress_respiratory = "1"
+    if "speech slurred" in inputSymptoms:
+        speech_slurred = "1"
+    if "hypercapnia" in inputSymptoms:
+        hypercapnia = "1"
+    if "sleeplessness" in inputSymptoms:
+        sleeplessness = "1"
+    if "swelling" in inputSymptoms:
+        swelling = "1"
+    if "atypia" in inputSymptoms:
+        atypia = "1"
+    if "hypotension" in inputSymptoms:
+        hypotension = "1"
+    if "pain" in inputSymptoms:
+        pain = "1"
+    if "stool color yellow" in inputSymptoms:
+        stool_color_yellow = "1"
+    if "systolic murmur" in inputSymptoms:
+        systolic_murmur = "1"
+    if "frail" in inputSymptoms:
+        frail = "1"
+    if "hypoproteinemia" in inputSymptoms:
+        hypoproteinemia = "1"
+    if "fatigue" in inputSymptoms:
+        fatigue = "1"
+    if "haemorrhage" in inputSymptoms:
+        haemorrhage = "1"
+    if "facial paresis" in inputSymptoms:
+        facial_paresis = "1"
+    if "ambidexterity" in inputSymptoms:
+        ambidexterity = "1"
+    if "numbness" in inputSymptoms:
+        numbness = "1"
+    if "splenomegaly" in inputSymptoms:
+        splenomegaly = "1"
+    if "clonus" in inputSymptoms:
+        clonus = "1"
+    if "egophony" in inputSymptoms:
+        egophony = "1"
+    if "st segment elevation" in inputSymptoms:
+        st_segment_elevation = "1"
+    if "arthralgia" in inputSymptoms:
+        arthralgia = "1"
+    if "muscle twitch" in inputSymptoms:
+        muscle_twitch = "1"
+    if "paralyse" in inputSymptoms:
+        paralyse = "1"
+    if "low back pain" in inputSymptoms:
+        low_back_pain = "1"
+    if "charleyhorse" in inputSymptoms:
+        charleyhorse = "1"
+    if "paraparesis" in inputSymptoms:
+        paraparesis = "1"
+    if "gravida 0" in inputSymptoms:
+        gravida_0 = "1"
+    if "mass in breast" in inputSymptoms:
+        mass_in_breast = "1"
+    if "tumor cell invasion" in inputSymptoms:
+        tumor_cell_invasion = "1"
+    if "metastatic lesion" in inputSymptoms:
+        metastatic_lesion = "1"
+    if "rhonchus" in inputSymptoms:
+        rhonchus = "1"
+    if "lung nodule" in inputSymptoms:
+        lung_nodule = "1"
+    if "bleeding of vagina" in inputSymptoms:
+        bleeding_of_vagina = "1"
+    if "hyperkalemia" in inputSymptoms:
+        hyperkalemia = "1"
+    if "bradycardia" in inputSymptoms:
+        bradycardia = "1"
+    if "cicatrisation" in inputSymptoms:
+        cicatrisation = "1"
+    if "mediastinal shift" in inputSymptoms:
+        mediastinal_shift = "1"
+    if "impaired cognition" in inputSymptoms:
+        impaired_cognition = "1"
+    if "snuffle" in inputSymptoms:
+        snuffle = "1"
+    if "chill" in inputSymptoms:
+        chill = "1"
+    if "headache" in inputSymptoms:
+        headache = "1"
+    if "guaiac positive" in inputSymptoms:
+        guaiac_positive = "1"
+    if "decreased body weight" in inputSymptoms:
+        decreased_body_weight = "1"
+    if "sore to touch" in inputSymptoms:
+        sore_to_touch = "1"
+
     output = ""
     for x in inputSymptoms:
-        print(x)
         if x == 'cough':
             q = Question(0, cough)
             rowsTrue, rowsFalse = partition(trainingData, q) # get rowsTrue returned from partition() given rows and question
@@ -804,5 +805,5 @@ def BeginDecisionTree(inputSymptoms):
     
     return "FINAL LIST OF DISEASES: " + output
 
-print(BeginDecisionTree(inputSymptoms))
+# print(BeginDecisionTree(inputSymptoms))
 
