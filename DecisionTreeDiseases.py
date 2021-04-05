@@ -802,8 +802,11 @@ def BeginDecisionTree(inputSymptoms):
             rowsTrue, rowsFalse = partition(trainingData, q) # get rowsTrue returned from partition() given rows and question
             trainingData = [x for x in trainingData if x not in rowsFalse]
             output = str(classCounts(trainingData))
-    
-    return "FINAL LIST OF DISEASES: " + output
+            
+    if output == "":
+        return "THE COMBINATION OF SYMPTOMS INPUTTED DO NOT CORRESPOND TO ANY DISEASES IN THIS DATA SET."
+    else:
+        return "FINAL LIST OF DISEASES: " + output
 
 # print(BeginDecisionTree(inputSymptoms))
 
