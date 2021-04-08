@@ -30,7 +30,8 @@ prob = pd.DataFrame(model.predict_proba(symptoms_list[0:1]), columns=model.class
 
 - The two files above have corresponding Jupyter Notebook files, [NaiveBayes.ipynb](https://github.com/jumana-s/3710-Project/blob/main/NaiveBayes.ipynb) and [Convert.ipynb](https://github.com/jumana-s/3710-Project/blob/main/Convert.ipynb), that provide more detail with sample outputs.
 
-**Decision Tree**
+**Decision Tree** 
+
 The Decision Tree algorithm implementation can be found in the `DecisionTreeAlgorithms` folder and includes the following files:
 
 
