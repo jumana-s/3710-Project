@@ -13,7 +13,7 @@ This program is deployed and available to test at: https://disease-checker.herok
 ## Implementation 
 **Naive Bayes**  
 
-The Naive Bayes algorithm implementation includes the following files:
+The Naive Bayes algorithm implementation can be found in the `NaiveBayes` folder and includes the following files:
 - [NaiveBayes.py](https://github.com/jumana-s/3710-Project/blob/main/NaiveBayes.py): Contains the algorithm that trains the model with the Bernoulli Classifier, predicts and returns the diseases and probability.
 ```
 dataset = pd.read_csv('disease.csv')
@@ -31,7 +31,7 @@ prob = pd.DataFrame(model.predict_proba(symptoms_list[0:1]), columns=model.class
 - The two files above have corresponding Jupyter Notebook files, [NaiveBayes.ipynb](https://github.com/jumana-s/3710-Project/blob/main/NaiveBayes.ipynb) and [Convert.ipynb](https://github.com/jumana-s/3710-Project/blob/main/Convert.ipynb), that provide more detail with sample outputs.
 
 **Decision Tree**
-
+The Decision Tree algorithm implementation can be found in the `DecisionTreeAlgorithms` folder and includes the following files:
 
 
 
