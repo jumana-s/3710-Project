@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-diseases = pd.read_csv("../disease.csv")
+diseases = pd.read_csv("/disease.csv")
 columns = list(diseases.columns)[:-1]
 
 total_sym = len(columns)
