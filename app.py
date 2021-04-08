@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for, render_template, request
 from NaiveBayes import NaiveBayes
-from DecisionTreeDiseases import BeginDecisionTree
+from 3710-Project.DecisionTreeAlgorithms.SymptomsDiseases.DecisionTreeDiseases import BeginDecisionTree
 import pandas as pd
 
 app = Flask(__name__)
