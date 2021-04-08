@@ -28,7 +28,7 @@ prob = pd.DataFrame(model.predict_proba(symptoms_list[0:1]), columns=model.class
 ```
 - [Convert.py](https://github.com/jumana-s/3710-Project/blob/main/Convert.py): Used to convert the user symptom input into a valid list of 0s and 1s to pass into the NaiveBayes function.
 
-- The two files above have corresponding Jupyter Notebook files, (NaiveBayes.ipynb)[https://github.com/jumana-s/3710-Project/blob/main/NaiveBayes.ipynb] and (Convert.ipynb)[https://github.com/jumana-s/3710-Project/blob/main/Convert.ipynb], that provide more detail with sample outputs.
+- The two files above have corresponding Jupyter Notebook files, [NaiveBayes.ipynb](https://github.com/jumana-s/3710-Project/blob/main/NaiveBayes.ipynb) and [Convert.ipynb](https://github.com/jumana-s/3710-Project/blob/main/Convert.ipynb), that provide more detail with sample outputs.
 
 **Decision Tree**
 
