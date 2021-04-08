@@ -8,7 +8,7 @@ The dataset used to obtain the information on diseases and symptoms can be found
 A new dataset was created using the information in the original dataset so symptoms associated with the disease will have a value of 1 and symptoms not associated with the disease will have a value of 0. This dataset, [diseases.csv](https://github.com/jumana-s/3710-Project/blob/main/disease.csv), was then used to train the decision tree and naive bayes models.
 
 ## Deployment
-This program is deployed and available to test at: https://disease-checker.herokuapp.com/
+This program is deployed and available to test at: https://disease-checker.herokuapp.com/ (might take a few seconds to fully load).
 
 ## Implementation 
 **Naive Bayes**  
