@@ -11,7 +11,7 @@ def NaiveBayes(user_symptoms, disease):
     symptoms_list = [symptoms]
     # load the datasets
     # training dataset (includes all the data for all the diseases)
-    dataset = pd.read_csv("../disease.csv")
+    dataset = pd.read_csv("disease.csv")
 
     # X = features of dataset
     X = dataset.drop(columns=['disease'])
