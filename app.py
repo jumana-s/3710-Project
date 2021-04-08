@@ -1,5 +1,5 @@
 from flask import Flask, redirect, url_for, render_template, request
-from NaiveBayes import NaiveBayes
+from NaiveBayes.NaiveBayes import NaiveBayes
 from DecisionTreeAlgorithms.SymptomsDiseases.DecisionTreeDiseases import BeginDecisionTree
 import pandas as pd
 
