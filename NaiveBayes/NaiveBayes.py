@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.naive_bayes import BernoulliNB
 
 # to turn user symptoms into a valid list of 0s and 1s
-from Convert import to_valid_list
+from NaiveBayes.Convert import to_valid_list
 
 def NaiveBayes(user_symptoms, disease):
     
