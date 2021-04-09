@@ -23,7 +23,7 @@ This class is used to partition the given dataset. Based on a column number and 
 These two functions are used to calculate the Gini Impurity. This measurment is the probability of classifying a random data point in the data set incorrectly. The data point is randomly classified based on the distribution class labels in the dataset (in *DecisionTreeShapes.py*, these labels are defined in ```header = ["colour", "shape"]```). 
 ```def giniFormula``` calls ```def giniImpurity``` to calculate the Gini Impurity, then the following formula is calculated:
 
-![Gini Formula](CodeCogsEqn.png)
+![Gini Formula](GiniFormula.png)
 
 **Best Split**
 
