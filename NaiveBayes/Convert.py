@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 
 diseases = pd.read_csv("disease.csv")

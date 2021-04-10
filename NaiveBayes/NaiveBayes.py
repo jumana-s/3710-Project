@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from sklearn.naive_bayes import BernoulliNB
 
 # to turn user symptoms into a valid list of 0s and 1s
