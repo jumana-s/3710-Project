@@ -38,6 +38,6 @@ The Decision Tree algorithm implementation can be found in the `DecisionTreeAlgo
 
 **User Interface**
 
-The UI is implemented in [app.py](https://github.com/jumana-s/3710-Project/blob/main/app.py).  Flask is used as the back-end framework for the web application.  The UI is composed of basic HTML for content, and BootStrap for style.  The main page for the UI is [index.html](https://github.com/jumana-s/3710-Project/blob/main/templates/index.html), located in the `templates` folder.
+The UI is implemented in [app.py](https://github.com/jumana-s/3710-Project/blob/main/app.py).  Flask is used as the back-end framework for the web application.  The UI is composed of basic HTML for the page structure, and BootStrap for style.  The main page for the UI is [index.html](https://github.com/jumana-s/3710-Project/blob/main/templates/index.html), located in the `templates` folder.
 
 The website was deployed with Heroku which needed [Procfile](https://github.com/jumana-s/3710-Project/blob/main/Procfile), [requirements.txt](https://github.com/jumana-s/3710-Project/blob/main/requirements.txt), and [runtime.txt](https://github.com/jumana-s/3710-Project/blob/main/runtime.txt).
